@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anime"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/bgnjudul">
+        <TextView
+            android:layout_below="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul: "
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Hello World!"
+            android:id="@+id/judulAnime"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/bgnromaniz"
+        android:layout_below="@+id/bgnjudul">
+        <TextView
+            android:layout_below="@+id/judul"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Romanized: "
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_below="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textColor="@color/black"
+            android:id="@+id/jdlromaniz"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/bgndescription"
+        android:layout_below="@+id/bgnromaniz">
+        <TextView
+            android:layout_below="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Deskripsi: "
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_below="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/description"
+            android:justificationMode="inter_word"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
